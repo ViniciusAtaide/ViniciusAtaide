@@ -1,0 +1,80 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Curriculum Vitae</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">    
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="styles/a1065421.base.css">
+</head>
+  <body ng-app="CurriculoApp">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">Seu browser está desatualizado. <a href="http://browsehappy.com/">Atualize agora</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instale o Google Chrome Frame</a> para melhor visualização.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+        <!-- Add your site or application content here -->
+    <div class="wrapper" ng-controller="MobileCtrl">
+        <div class="header">
+            <div class="center" ng-controller="navCtrl" ng-mouseleave="selectActive()" ng-mouseout="selectActive()">
+                <a href="javascript:;" class="menu" ng-click="active = !active"><i class="down"></i>Menu</a>
+                <ul class="nav">
+                    <li><a ng-class="navClass('portfolio')" ng-click="active = !active" ng-mouseover="select(0)" href="#/portfolio">Portfolio</a></li>
+                    <li><a ng-class="navClass('')" ng-click="active = !active" ng-mouseover="select(1)" href="#/">Conhecimento</a></li>
+                    <li><a ng-class="navClass('complemento')" ng-click="active = !active" ng-mouseover="select(2)" href="#/complemento">Complemento</a></li>
+                    <span class="selector" style="left: {{ left }}px; width: {{ larg }}px"></span>
+                </ul> <!-- nav -->                
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/vinicius.ataide.7"><i class="face"></i></a></li>
+                    <li><a href="https://twitter.com/viniciusataid"><i class="twitter"></i></a></li>
+                </ul>
+            </div>
+        </div> <!-- header -->
+        <div class="hero-unit">
+            <div class="center">
+                <p ng-swipe="" class="muted ff">Construído para ser visualizado no FireFox</p>
+                <i class="pointer"></i>
+                <p class="local"><small>Rua Mar Mediterrâneo, Cabedelo-1464 <a href="mailto:viniciusataid@gmail.com?Subject=Resposta%20Curriculo">viniciusataid@gmail.com</a> - (83) 9857-1767</small></p>
+
+                <h1>Vinicius Ataíde de Albuquerque</h1>
+                <div class="relative corpo">
+                    <div class="slide" ng-view=""></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <small class="muted">Currículum Vitae - <a href="https://github.com/ViniciusAtaide">Vinicius Ataide de Albuquerque - GitHub</a>	</small>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/angular-unstable/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular/angular-touch.js"></script>
+
+
+        <script src="scripts/914d3559.scripts.js"></script>
+</body>
+</html>

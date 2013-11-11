@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div id="portfolio">
+        <section class="site center">
+            <article class="preview" ng-repeat="site in sites">
+                <h2>{{ site.titulo }}</h2>
+                <a href="{{ site.url }}" target="_self">
+                    <img src="{{ site.src }}">
+                    <footer>
+                        <div class="table">
+                            <div class="v_middle">
+                                {{ site.footer }}
+                            </div>
+                        </div>
+                    </footer>
+                </a>
+            </article>
+        </section>
+    </div>
+</div>

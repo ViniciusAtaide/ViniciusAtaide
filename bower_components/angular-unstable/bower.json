@@ -1,0 +1,7 @@
+{
+  "name": "angular-unstable",
+  "version": "1.2.0rc1",
+  "main": "./angular.js",
+  "dependencies": {
+  }
+}
